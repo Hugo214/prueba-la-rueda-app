@@ -1,0 +1,37 @@
+<div class="max-w-md mx-auto bg-white shadow-md rounded-xl p-6 mt-10">
+  <h2 class="text-2xl font-semibold text-indigo-700 mb-4 text-center">
+    Carga Masiva de Contactos
+  </h2>
+
+  <p class="text-gray-600 text-center mb-4">
+    Sube un archivo <strong>JSON</strong> con una lista de contactos.
+  </p>
+
+  <input
+    type="file"
+    accept=".json"
+    (change)="onFileSelected($event)"
+    class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-4"
+  />
+
+  <div *ngIf="fileName" class="text-sm text-gray-500 mb-2">
+    Archivo seleccionado: <strong>{{ fileName }}</strong>
+  </div>
+
+  <div *ngIf="message" class="text-green-600 text-center mb-2">{{ message }}</div>
+  <div *ngIf="error" class="text-red-500 text-center mb-2">{{ error }}</div>
+
+  <button
+    (click)="saveAll()"
+    class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+  >
+    Guardar todos los contactos
+  </button>
+  <a
+  href="assets/contacts-template.json"
+  download="contacts-template.json"
+  class="text-indigo-600 underline hover:text-indigo-800 block text-center mb-4"
+>
+  📄 Descargar plantilla de ejemplo
+</a>
+</div>

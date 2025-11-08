@@ -1,0 +1,62 @@
+[
+  {
+    "placa": "ABC123",
+    "nombre": "Juan Pérez",
+    "telefono": "3004567890",
+    "email": "juan.perez@larueda.com"
+  },
+  {
+    "placa": "XYZ987",
+    "nombre": "María Gómez",
+    "telefono": "3109876543",
+    "email": "maria.gomez@larueda.com"
+  },
+  {
+    "placa": "LMN456",
+    "nombre": "Carlos Ramírez",
+    "telefono": "3201122334",
+    "email": "carlos.ramirez@larueda.com"
+  },
+  {
+    "placa": "RTY852",
+    "nombre": "Ana Torres",
+    "telefono": "3159988776",
+    "email": "ana.torres@larueda.com"
+  },
+  {
+    "placa": "POI963",
+    "nombre": "Luis Fernández",
+    "telefono": "3023344556",
+    "email": "luis.fernandez@larueda.com"
+  },
+  {
+    "placa": "JKL741",
+    "nombre": "Andrea López",
+    "telefono": "3017766554",
+    "email": "andrea.lopez@larueda.com"
+  },
+  {
+    "placa": "GHJ852",
+    "nombre": "Pedro Díaz",
+    "telefono": "3114433221",
+    "email": "pedro.diaz@larueda.com"
+  },
+  {
+    "placa": "BNM159",
+    "nombre": "Sofía Herrera",
+    "telefono": "3126655443",
+    "email": "sofia.herrera@larueda.com"
+  },
+  {
+    "placa": "CVB753",
+    "nombre": "Julián Rojas",
+    "telefono": "3007788990",
+    "email": "julian.rojas@larueda.com"
+  },
+  {
+    "placa": "QWE852",
+    "nombre": "Camila Mendoza",
+    "telefono": "3132211098",
+    "email": "camila.mendoza@larueda.com"
+  }
+]

@@ -1,0 +1,31 @@
+<div class="min-h-screen flex flex-col bg-gray-50 text-gray-800">
+  <!-- 🔹 NAVBAR -->
+  <nav class="bg-indigo-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <a routerLink="/home" class="text-2xl font-bold tracking-tight">La Rueda</a>
+      <div class="flex items-center space-x-6">
+        <a routerLink="/home" class="hover:text-sky-200 transition">Inicio</a>
+        <a routerLink="/contacts" class="hover:text-sky-200 transition">Contactos</a>
+        <a routerLink="/contacts/create" class="hover:text-sky-200 transition">Nuevo</a>
+        <a routerLink="/contacts/bulk" class="hover:text-sky-200 transition">Carga</a>
+        <button
+          *ngIf="user"
+          (click)="logout()"
+          class="bg-white text-indigo-700 font-medium px-3 py-1 rounded-lg hover:bg-gray-100 transition"
+        >
+          Salir
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 CONTENIDO PRINCIPAL -->
+  <main class="flex-1">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="bg-indigo-600 text-white text-center py-3 mt-8">
+    © {{ currentYear }} La Rueda S.A.S. — Plataforma de Contactos
+  </footer>
+</div>
